@@ -269,11 +269,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-scrypt-custom_Example/Pods-scrypt-custom_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/scrypt-custom/scrypt_custom.framework",
+				"${BUILT_PRODUCTS_DIR}/scrypt-custom/scrypt.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt_custom.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

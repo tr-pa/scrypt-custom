@@ -1,5 +1,5 @@
 import XCTest
-import scrypt-custom
+import scrypt
 
 class Tests: XCTestCase {
     

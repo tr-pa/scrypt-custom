@@ -1,0 +1,16 @@
+PODS:
+  - scrypt-custom (0.1.0)
+
+DEPENDENCIES:
+  - scrypt-custom (from `../`)
+
+EXTERNAL SOURCES:
+  scrypt-custom:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  scrypt-custom: f0a092d41613a876750c17fd43a8671f39d40292
+
+PODFILE CHECKSUM: cd787891469f8103954e6f49102490fa823f4e59
+
+COCOAPODS: 1.15.0

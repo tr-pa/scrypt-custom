@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05035BE5BFFB0CE0C45C0AFB2EC792AC /* crypto_scrypt_smix_sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = B673D7FFB60B14A67BA970CB18A5B3AB /* crypto_scrypt_smix_sse2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06346B2D596C189D174D7382A65A0EB8 /* readpass.h in Headers */ = {isa = PBXBuildFile; fileRef = C20E5630E0C869E91F3D8B8D6B4DCA2A /* readpass.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E594EC0A8A1E2B7CDBE280984AF83B3 /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E4D0C7E8D31EFCF07B639BB6BBAFEF /* readpass.c */; };
+		1159CFE9179E63972A7A81E5353684AB /* Pods-scrypt-custom_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6196A7B930FFEA11436A2A2C2CD09D /* Pods-scrypt-custom_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14D955BD73655D80C2A09AE52D201BB9 /* Pods-scrypt-custom_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 746A77CB920798D7371FB2761EFB6B8F /* Pods-scrypt-custom_Example-dummy.m */; };
+		1541CB4A4383F30C0672BCB630A29015 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 177379D99A3647778F5BAF0EE759515A /* sha256.c */; };
+		1A724B03B3C17ACB7FEDEFAB67F80DA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		1A844A34585451392FF25654624ADA3E /* crypto_scrypt_smix.h in Headers */ = {isa = PBXBuildFile; fileRef = 162B9A6B65ABD510106403A5F2E78EB0 /* crypto_scrypt_smix.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22C079118811EF6FB0452EF0622D428E /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = 73296B0A0195AC0AB8798FCCE1188EA8 /* sysendian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24D69665EF0EA78A35CA07AEDC064060 /* scrypt-custom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3069838505DADE443CA405F66516CA04 /* scrypt-custom-dummy.m */; };
+		2990FFA60728BBFD802E37A78F7CD0C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		3DE494E9E60E46F098FB086D8CCF0578 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E1204067ADC405425616F61DA049A7 /* entropy.c */; };
+		528BF55BFEFB4661CF6401DBFC8D96E4 /* asprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = E67F44C96E99F7CE6C1E67BE87BCD890 /* asprintf.c */; };
+		64B9E827958F12D7511B63FB9ECFAB01 /* Pods-scrypt-custom_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA3D57E7279E961C9ACC5AE664B3FD9 /* Pods-scrypt-custom_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		712E5D09B6A21531A4AA35C4DB090EC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		759822D8C1D00B9926F07D5FB2E1644B /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D1CAB281AC08833148E30F65D393B9 /* scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75DBF9335AD55E73597250F02691BB0E /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = B384DC039ED06638A46C46124A596D5F /* getopt.c */; };
+		766C065073A46B0B0E6FBC61E9F2A066 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2DF2807AD1E7159903150A6C4783BA /* sha256.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78D5B679A916E5190F2E8A459D87B6BC /* insecure_memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA59BB3D42111C52CEEDBB36B614341 /* insecure_memzero.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86C970ED28E4C1552AB51310E684D7BF /* getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FD8A4C9DF9CAF48CC0F57AF26385D0 /* getopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8CD6140ECE4D4CE6C0A0B5F4EBC90D44 /* crypto_scrypt_smix.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D647172CF8F2BDA469CCC99564464 /* crypto_scrypt_smix.c */; };
+		8F89F05FE3632D5FA93EECC8D297B459 /* insecure_memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = A5B9B4E9CE2EABD0F6842A04D82100B5 /* insecure_memzero.c */; };
+		8FCD5EF82AC01459634FB0C6B53360D5 /* parsenum.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4A7F1D8B46E4D12F22163C9C67B710 /* parsenum.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		94117BAEF3E2EAE924141EDED35BDFED /* humansize.h in Headers */ = {isa = PBXBuildFile; fileRef = ECEE4A1435E953BBCA304B2A8A8EE349 /* humansize.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		990BF60BBBC10273F59F83F369221371 /* scrypt-custom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7B0F78A97EFC1EB130C4A6393EF7BF /* scrypt-custom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A55971E3B8F20C447091C3665EBA557 /* crypto_scrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F53FC80B01609FE695D3BB36EBC20B /* crypto_scrypt.c */; };
+		9AFA3321DA291A5A1DD8E34280A7DC5E /* warnp.c in Sources */ = {isa = PBXBuildFile; fileRef = 713484953C595E99EB06D628D1BF3ADF /* warnp.c */; };
+		AA9327BADE47BF515402B75BC37F1E85 /* humansize.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FAB3C757433271A84A7AFA1AA8766 /* humansize.c */; };
+		D5F772FC156D1354D3D7F43C6C4AB675 /* crypto_scrypt_smix_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = AC2C1EF0771D38EDD007E6A614A3418D /* crypto_scrypt_smix_sse2.c */; };
+		E166238AFA5500F632090876D8F556AC /* asprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F195E08095F8049EC087BD67BD98DD /* asprintf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E629C28392209D03BAD01485390B4ABA /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9231CB94212833D8C5D369016F550D8C /* entropy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EEF636B7157AAA215B2A1403662F4BCA /* Pods-scrypt-custom_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A84891278EA19C546ADBF30B1DBC57B2 /* Pods-scrypt-custom_Tests-dummy.m */; };
+		FCC2009547FDD4F21E0E98DB467006E7 /* warnp.h in Headers */ = {isa = PBXBuildFile; fileRef = BF41ED9D50DE9E31167B9870BE39F639 /* warnp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D225CCBF52C8054A30FDCCB9163EC79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F991178BC0A3DA8515BEE299F8653E55;
+			remoteInfo = "scrypt-custom";
+		};
+		EDC9B862F44A6575F4BD40CFC84C6B4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F252951EFCB2198BF334B3A7715656D2;
+			remoteInfo = "Pods-scrypt-custom_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09D1CAB281AC08833148E30F65D393B9 /* scrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = scrypt.h; sourceTree = "<group>"; };
+		162B9A6B65ABD510106403A5F2E78EB0 /* crypto_scrypt_smix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_scrypt_smix.h; path = "scrypt-custom/Classes/scrypt/crypto_scrypt_smix.h"; sourceTree = "<group>"; };
+		172697462B86CE32B33CD5CD952E8E9A /* Pods-scrypt-custom_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scrypt-custom_Example-Info.plist"; sourceTree = "<group>"; };
+		177379D99A3647778F5BAF0EE759515A /* sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha256.c; path = "scrypt-custom/Classes/scrypt/sha256.c"; sourceTree = "<group>"; };
+		1F1FAB3C757433271A84A7AFA1AA8766 /* humansize.c */ = {isa = PBXFileReference; includeInIndex = 1; name = humansize.c; path = "scrypt-custom/Classes/scrypt/humansize.c"; sourceTree = "<group>"; };
+		2460A7C2655EB4522A68D961A0004D3A /* Pods-scrypt-custom_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-scrypt-custom_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2CC882276D18553892FCC01529EF03A9 /* scrypt-custom.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "scrypt-custom.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3069838505DADE443CA405F66516CA04 /* scrypt-custom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "scrypt-custom-dummy.m"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		48E1204067ADC405425616F61DA049A7 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = "scrypt-custom/Classes/scrypt/entropy.c"; sourceTree = "<group>"; };
+		4B1869BDB1A134F444B1710184EBF88D /* scrypt-custom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "scrypt-custom.modulemap"; sourceTree = "<group>"; };
+		4F4A7F1D8B46E4D12F22163C9C67B710 /* parsenum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parsenum.h; path = "scrypt-custom/Classes/scrypt/parsenum.h"; sourceTree = "<group>"; };
+		54FD8A4C9DF9CAF48CC0F57AF26385D0 /* getopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = getopt.h; path = "scrypt-custom/Classes/scrypt/getopt.h"; sourceTree = "<group>"; };
+		55E703631C3A9F74F74531BDC8BA012A /* scrypt-custom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "scrypt-custom-prefix.pch"; sourceTree = "<group>"; };
+		5FA59BB3D42111C52CEEDBB36B614341 /* insecure_memzero.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = insecure_memzero.h; path = "scrypt-custom/Classes/scrypt/insecure_memzero.h"; sourceTree = "<group>"; };
+		67C2608E37C0B0CC2A78ED77AEFC7D66 /* Pods-scrypt-custom_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-scrypt-custom_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E6196A7B930FFEA11436A2A2C2CD09D /* Pods-scrypt-custom_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-scrypt-custom_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6E96B9475F0D1119C3E8CCCE0C108218 /* scrypt-custom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "scrypt-custom.release.xcconfig"; sourceTree = "<group>"; };
+		70755F0A788CC104096B2362862BA2C5 /* scrypt-custom */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "scrypt-custom"; path = scrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		713484953C595E99EB06D628D1BF3ADF /* warnp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = warnp.c; path = "scrypt-custom/Classes/scrypt/warnp.c"; sourceTree = "<group>"; };
+		72244571EE1C214997C75295AACED79E /* Pods-scrypt-custom_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scrypt-custom_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		73296B0A0195AC0AB8798FCCE1188EA8 /* sysendian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sysendian.h; path = "scrypt-custom/Classes/scrypt/sysendian.h"; sourceTree = "<group>"; };
+		746A77CB920798D7371FB2761EFB6B8F /* Pods-scrypt-custom_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-scrypt-custom_Example-dummy.m"; sourceTree = "<group>"; };
+		74BE8A0124791C936B62B2B43FCD568A /* Pods-scrypt-custom_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scrypt-custom_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		768F8EE811EA4F4A403E14CC4E3EA326 /* scrypt-custom-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "scrypt-custom-Info.plist"; sourceTree = "<group>"; };
+		77BAC0AF6EB7CD9E97AE98900C8FD4D8 /* Pods-scrypt-custom_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-scrypt-custom_Tests"; path = Pods_scrypt_custom_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7D647172CF8F2BDA469CCC99564464 /* crypto_scrypt_smix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_scrypt_smix.c; path = "scrypt-custom/Classes/scrypt/crypto_scrypt_smix.c"; sourceTree = "<group>"; };
+		9231CB94212833D8C5D369016F550D8C /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = "scrypt-custom/Classes/scrypt/entropy.h"; sourceTree = "<group>"; };
+		967649A813BED7635440722AE564F927 /* Pods-scrypt-custom_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scrypt-custom_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		96F58949776DC8E9F06954CDBA511CBE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9A710FB6415B31F2BC142BABF24F60B1 /* Pods-scrypt-custom_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scrypt-custom_Tests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5B9B4E9CE2EABD0F6842A04D82100B5 /* insecure_memzero.c */ = {isa = PBXFileReference; includeInIndex = 1; name = insecure_memzero.c; path = "scrypt-custom/Classes/scrypt/insecure_memzero.c"; sourceTree = "<group>"; };
+		A84891278EA19C546ADBF30B1DBC57B2 /* Pods-scrypt-custom_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-scrypt-custom_Tests-dummy.m"; sourceTree = "<group>"; };
+		ABEC1636983FED260886148A82648CF3 /* scrypt-custom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "scrypt-custom.debug.xcconfig"; sourceTree = "<group>"; };
+		AC2C1EF0771D38EDD007E6A614A3418D /* crypto_scrypt_smix_sse2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_scrypt_smix_sse2.c; path = "scrypt-custom/Classes/scrypt/crypto_scrypt_smix_sse2.c"; sourceTree = "<group>"; };
+		AD7B0F78A97EFC1EB130C4A6393EF7BF /* scrypt-custom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "scrypt-custom-umbrella.h"; sourceTree = "<group>"; };
+		AFA3D57E7279E961C9ACC5AE664B3FD9 /* Pods-scrypt-custom_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-scrypt-custom_Example-umbrella.h"; sourceTree = "<group>"; };
+		B1E5AADA3E96F8680F75D93F800B8BD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B23D604C7EBE69531CDC4DBA12362E7E /* Pods-scrypt-custom_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-scrypt-custom_Example.modulemap"; sourceTree = "<group>"; };
+		B384DC039ED06638A46C46124A596D5F /* getopt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = getopt.c; path = "scrypt-custom/Classes/scrypt/getopt.c"; sourceTree = "<group>"; };
+		B673D7FFB60B14A67BA970CB18A5B3AB /* crypto_scrypt_smix_sse2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_scrypt_smix_sse2.h; path = "scrypt-custom/Classes/scrypt/crypto_scrypt_smix_sse2.h"; sourceTree = "<group>"; };
+		BF41ED9D50DE9E31167B9870BE39F639 /* warnp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = warnp.h; path = "scrypt-custom/Classes/scrypt/warnp.h"; sourceTree = "<group>"; };
+		C20E5630E0C869E91F3D8B8D6B4DCA2A /* readpass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = readpass.h; path = "scrypt-custom/Classes/scrypt/readpass.h"; sourceTree = "<group>"; };
+		C41E88DA6E19664F5611EA1C194386C6 /* Pods-scrypt-custom_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-scrypt-custom_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C55C1FDC814B28C9DEF766991CEA3F3D /* Pods-scrypt-custom_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scrypt-custom_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C6F53FC80B01609FE695D3BB36EBC20B /* crypto_scrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto_scrypt.c; path = "scrypt-custom/Classes/scrypt/crypto_scrypt.c"; sourceTree = "<group>"; };
+		C7E4D0C7E8D31EFCF07B639BB6BBAFEF /* readpass.c */ = {isa = PBXFileReference; includeInIndex = 1; name = readpass.c; path = "scrypt-custom/Classes/scrypt/readpass.c"; sourceTree = "<group>"; };
+		E24A9D3A82094486F7DF31882E327B2D /* Pods-scrypt-custom_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scrypt-custom_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2F195E08095F8049EC087BD67BD98DD /* asprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asprintf.h; path = "scrypt-custom/Classes/scrypt/asprintf.h"; sourceTree = "<group>"; };
+		E67F44C96E99F7CE6C1E67BE87BCD890 /* asprintf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = asprintf.c; path = "scrypt-custom/Classes/scrypt/asprintf.c"; sourceTree = "<group>"; };
+		EAFAAE4A26E124E83BBEE8DB201EB1B9 /* Pods-scrypt-custom_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-scrypt-custom_Tests.modulemap"; sourceTree = "<group>"; };
+		ECEE4A1435E953BBCA304B2A8A8EE349 /* humansize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = humansize.h; path = "scrypt-custom/Classes/scrypt/humansize.h"; sourceTree = "<group>"; };
+		EE9EDAB3F856F976DEFBBED3F3B9942F /* Pods-scrypt-custom_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-scrypt-custom_Example"; path = Pods_scrypt_custom_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E917023F52CF3DC6A14A89F059698F /* Pods-scrypt-custom_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scrypt-custom_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FE2DF2807AD1E7159903150A6C4783BA /* sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha256.h; path = "scrypt-custom/Classes/scrypt/sha256.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88CE747B2A00E2C0D33BF2FD8326DB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712E5D09B6A21531A4AA35C4DB090EC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983CEDF8295C711C3E634966E0B49850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2990FFA60728BBFD802E37A78F7CD0C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DF14147D260AE6DFEAE720307FCE79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A724B03B3C17ACB7FEDEFAB67F80DA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063D6603BEEB9BC65B87455E2A440333 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				09D1CAB281AC08833148E30F65D393B9 /* scrypt.h */,
+			);
+			name = include;
+			path = "scrypt-custom/Classes/scrypt/include";
+			sourceTree = "<group>";
+		};
+		13CA6373BF792313B2DC286C1F787A09 /* Pods-scrypt-custom_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B23D604C7EBE69531CDC4DBA12362E7E /* Pods-scrypt-custom_Example.modulemap */,
+				2460A7C2655EB4522A68D961A0004D3A /* Pods-scrypt-custom_Example-acknowledgements.markdown */,
+				E24A9D3A82094486F7DF31882E327B2D /* Pods-scrypt-custom_Example-acknowledgements.plist */,
+				746A77CB920798D7371FB2761EFB6B8F /* Pods-scrypt-custom_Example-dummy.m */,
+				C41E88DA6E19664F5611EA1C194386C6 /* Pods-scrypt-custom_Example-frameworks.sh */,
+				172697462B86CE32B33CD5CD952E8E9A /* Pods-scrypt-custom_Example-Info.plist */,
+				AFA3D57E7279E961C9ACC5AE664B3FD9 /* Pods-scrypt-custom_Example-umbrella.h */,
+				72244571EE1C214997C75295AACED79E /* Pods-scrypt-custom_Example.debug.xcconfig */,
+				C55C1FDC814B28C9DEF766991CEA3F3D /* Pods-scrypt-custom_Example.release.xcconfig */,
+			);
+			name = "Pods-scrypt-custom_Example";
+			path = "Target Support Files/Pods-scrypt-custom_Example";
+			sourceTree = "<group>";
+		};
+		160205A1F10A1EB8F9433261E0E0742B /* Pods-scrypt-custom_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFAAE4A26E124E83BBEE8DB201EB1B9 /* Pods-scrypt-custom_Tests.modulemap */,
+				67C2608E37C0B0CC2A78ED77AEFC7D66 /* Pods-scrypt-custom_Tests-acknowledgements.markdown */,
+				74BE8A0124791C936B62B2B43FCD568A /* Pods-scrypt-custom_Tests-acknowledgements.plist */,
+				A84891278EA19C546ADBF30B1DBC57B2 /* Pods-scrypt-custom_Tests-dummy.m */,
+				9A710FB6415B31F2BC142BABF24F60B1 /* Pods-scrypt-custom_Tests-Info.plist */,
+				6E6196A7B930FFEA11436A2A2C2CD09D /* Pods-scrypt-custom_Tests-umbrella.h */,
+				967649A813BED7635440722AE564F927 /* Pods-scrypt-custom_Tests.debug.xcconfig */,
+				F8E917023F52CF3DC6A14A89F059698F /* Pods-scrypt-custom_Tests.release.xcconfig */,
+			);
+			name = "Pods-scrypt-custom_Tests";
+			path = "Target Support Files/Pods-scrypt-custom_Tests";
+			sourceTree = "<group>";
+		};
+		22CE49EF052B3E7EB85498543AFAEE98 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				96F58949776DC8E9F06954CDBA511CBE /* LICENSE */,
+				B1E5AADA3E96F8680F75D93F800B8BD0 /* README.md */,
+				2CC882276D18553892FCC01529EF03A9 /* scrypt-custom.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2B5BEBF58B817AB6DEDA045A79ED3413 /* scrypt-custom */ = {
+			isa = PBXGroup;
+			children = (
+				E67F44C96E99F7CE6C1E67BE87BCD890 /* asprintf.c */,
+				E2F195E08095F8049EC087BD67BD98DD /* asprintf.h */,
+				C6F53FC80B01609FE695D3BB36EBC20B /* crypto_scrypt.c */,
+				7B7D647172CF8F2BDA469CCC99564464 /* crypto_scrypt_smix.c */,
+				162B9A6B65ABD510106403A5F2E78EB0 /* crypto_scrypt_smix.h */,
+				AC2C1EF0771D38EDD007E6A614A3418D /* crypto_scrypt_smix_sse2.c */,
+				B673D7FFB60B14A67BA970CB18A5B3AB /* crypto_scrypt_smix_sse2.h */,
+				48E1204067ADC405425616F61DA049A7 /* entropy.c */,
+				9231CB94212833D8C5D369016F550D8C /* entropy.h */,
+				B384DC039ED06638A46C46124A596D5F /* getopt.c */,
+				54FD8A4C9DF9CAF48CC0F57AF26385D0 /* getopt.h */,
+				1F1FAB3C757433271A84A7AFA1AA8766 /* humansize.c */,
+				ECEE4A1435E953BBCA304B2A8A8EE349 /* humansize.h */,
+				A5B9B4E9CE2EABD0F6842A04D82100B5 /* insecure_memzero.c */,
+				5FA59BB3D42111C52CEEDBB36B614341 /* insecure_memzero.h */,
+				4F4A7F1D8B46E4D12F22163C9C67B710 /* parsenum.h */,
+				C7E4D0C7E8D31EFCF07B639BB6BBAFEF /* readpass.c */,
+				C20E5630E0C869E91F3D8B8D6B4DCA2A /* readpass.h */,
+				177379D99A3647778F5BAF0EE759515A /* sha256.c */,
+				FE2DF2807AD1E7159903150A6C4783BA /* sha256.h */,
+				73296B0A0195AC0AB8798FCCE1188EA8 /* sysendian.h */,
+				713484953C595E99EB06D628D1BF3ADF /* warnp.c */,
+				BF41ED9D50DE9E31167B9870BE39F639 /* warnp.h */,
+				063D6603BEEB9BC65B87455E2A440333 /* include */,
+				22CE49EF052B3E7EB85498543AFAEE98 /* Pod */,
+				74BB943F6CEC1EF22CEAC6BE99850481 /* Support Files */,
+			);
+			name = "scrypt-custom";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4783704A061851403BC84AE14F090C00 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13CA6373BF792313B2DC286C1F787A09 /* Pods-scrypt-custom_Example */,
+				160205A1F10A1EB8F9433261E0E0742B /* Pods-scrypt-custom_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6BE77CBBC6E3F5E7B6E467BC2C2D8B79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE9EDAB3F856F976DEFBBED3F3B9942F /* Pods-scrypt-custom_Example */,
+				77BAC0AF6EB7CD9E97AE98900C8FD4D8 /* Pods-scrypt-custom_Tests */,
+				70755F0A788CC104096B2362862BA2C5 /* scrypt-custom */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74BB943F6CEC1EF22CEAC6BE99850481 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B1869BDB1A134F444B1710184EBF88D /* scrypt-custom.modulemap */,
+				3069838505DADE443CA405F66516CA04 /* scrypt-custom-dummy.m */,
+				768F8EE811EA4F4A403E14CC4E3EA326 /* scrypt-custom-Info.plist */,
+				55E703631C3A9F74F74531BDC8BA012A /* scrypt-custom-prefix.pch */,
+				AD7B0F78A97EFC1EB130C4A6393EF7BF /* scrypt-custom-umbrella.h */,
+				ABEC1636983FED260886148A82648CF3 /* scrypt-custom.debug.xcconfig */,
+				6E96B9475F0D1119C3E8CCCE0C108218 /* scrypt-custom.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/scrypt-custom";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DB3336186CCE8C0884C559280F3A68FA /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6BE77CBBC6E3F5E7B6E467BC2C2D8B79 /* Products */,
+				4783704A061851403BC84AE14F090C00 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB3336186CCE8C0884C559280F3A68FA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B5BEBF58B817AB6DEDA045A79ED3413 /* scrypt-custom */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A76694E59A98034BB970162764C00B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1159CFE9179E63972A7A81E5353684AB /* Pods-scrypt-custom_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D395C781864F135532DD0AC4D2398C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B9E827958F12D7511B63FB9ECFAB01 /* Pods-scrypt-custom_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67D60D2E17EA12A83014C7E1134C579 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E166238AFA5500F632090876D8F556AC /* asprintf.h in Headers */,
+				1A844A34585451392FF25654624ADA3E /* crypto_scrypt_smix.h in Headers */,
+				05035BE5BFFB0CE0C45C0AFB2EC792AC /* crypto_scrypt_smix_sse2.h in Headers */,
+				E629C28392209D03BAD01485390B4ABA /* entropy.h in Headers */,
+				86C970ED28E4C1552AB51310E684D7BF /* getopt.h in Headers */,
+				94117BAEF3E2EAE924141EDED35BDFED /* humansize.h in Headers */,
+				78D5B679A916E5190F2E8A459D87B6BC /* insecure_memzero.h in Headers */,
+				8FCD5EF82AC01459634FB0C6B53360D5 /* parsenum.h in Headers */,
+				06346B2D596C189D174D7382A65A0EB8 /* readpass.h in Headers */,
+				759822D8C1D00B9926F07D5FB2E1644B /* scrypt.h in Headers */,
+				990BF60BBBC10273F59F83F369221371 /* scrypt-custom-umbrella.h in Headers */,
+				766C065073A46B0B0E6FBC61E9F2A066 /* sha256.h in Headers */,
+				22C079118811EF6FB0452EF0622D428E /* sysendian.h in Headers */,
+				FCC2009547FDD4F21E0E98DB467006E7 /* warnp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C57BC63326A25BB1FBF6543AD055D1A2 /* Pods-scrypt-custom_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7B588861F3EB00876966AEACBA53CD /* Build configuration list for PBXNativeTarget "Pods-scrypt-custom_Tests" */;
+			buildPhases = (
+				3A76694E59A98034BB970162764C00B4 /* Headers */,
+				96A7B2A33125B1389607DE3ECBE0B3A9 /* Sources */,
+				88CE747B2A00E2C0D33BF2FD8326DB2C /* Frameworks */,
+				2B07E23E5DD562E421D0CFA0B7B7A683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52D2D3B4E785761822AE246D0FFFB7FB /* PBXTargetDependency */,
+			);
+			name = "Pods-scrypt-custom_Tests";
+			productName = Pods_scrypt_custom_Tests;
+			productReference = 77BAC0AF6EB7CD9E97AE98900C8FD4D8 /* Pods-scrypt-custom_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F252951EFCB2198BF334B3A7715656D2 /* Pods-scrypt-custom_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C28CFA5EDEF5E5FDD4B61C6332F0782 /* Build configuration list for PBXNativeTarget "Pods-scrypt-custom_Example" */;
+			buildPhases = (
+				44D395C781864F135532DD0AC4D2398C /* Headers */,
+				2AF087609C62790177D756BE9B472EBE /* Sources */,
+				F8DF14147D260AE6DFEAE720307FCE79 /* Frameworks */,
+				E94C884537C6565E1F682C1EF2D71F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				029C72C7FD736B52B213D6FE803E5884 /* PBXTargetDependency */,
+			);
+			name = "Pods-scrypt-custom_Example";
+			productName = Pods_scrypt_custom_Example;
+			productReference = EE9EDAB3F856F976DEFBBED3F3B9942F /* Pods-scrypt-custom_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		F991178BC0A3DA8515BEE299F8653E55 /* scrypt-custom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD520A94A5FE8833B350C01F0DBE1183 /* Build configuration list for PBXNativeTarget "scrypt-custom" */;
+			buildPhases = (
+				C67D60D2E17EA12A83014C7E1134C579 /* Headers */,
+				F064F39999DB74300CA3CD04125EC74A /* Sources */,
+				983CEDF8295C711C3E634966E0B49850 /* Frameworks */,
+				74F660DCC48D56EC97475C01FAE81FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scrypt-custom";
+			productName = scrypt;
+			productReference = 70755F0A788CC104096B2362862BA2C5 /* scrypt-custom */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6BE77CBBC6E3F5E7B6E467BC2C2D8B79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F252951EFCB2198BF334B3A7715656D2 /* Pods-scrypt-custom_Example */,
+				C57BC63326A25BB1FBF6543AD055D1A2 /* Pods-scrypt-custom_Tests */,
+				F991178BC0A3DA8515BEE299F8653E55 /* scrypt-custom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B07E23E5DD562E421D0CFA0B7B7A683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F660DCC48D56EC97475C01FAE81FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94C884537C6565E1F682C1EF2D71F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AF087609C62790177D756BE9B472EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D955BD73655D80C2A09AE52D201BB9 /* Pods-scrypt-custom_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A7B2A33125B1389607DE3ECBE0B3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF636B7157AAA215B2A1403662F4BCA /* Pods-scrypt-custom_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F064F39999DB74300CA3CD04125EC74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528BF55BFEFB4661CF6401DBFC8D96E4 /* asprintf.c in Sources */,
+				9A55971E3B8F20C447091C3665EBA557 /* crypto_scrypt.c in Sources */,
+				8CD6140ECE4D4CE6C0A0B5F4EBC90D44 /* crypto_scrypt_smix.c in Sources */,
+				D5F772FC156D1354D3D7F43C6C4AB675 /* crypto_scrypt_smix_sse2.c in Sources */,
+				3DE494E9E60E46F098FB086D8CCF0578 /* entropy.c in Sources */,
+				75DBF9335AD55E73597250F02691BB0E /* getopt.c in Sources */,
+				AA9327BADE47BF515402B75BC37F1E85 /* humansize.c in Sources */,
+				8F89F05FE3632D5FA93EECC8D297B459 /* insecure_memzero.c in Sources */,
+				0E594EC0A8A1E2B7CDBE280984AF83B3 /* readpass.c in Sources */,
+				24D69665EF0EA78A35CA07AEDC064060 /* scrypt-custom-dummy.m in Sources */,
+				1541CB4A4383F30C0672BCB630A29015 /* sha256.c in Sources */,
+				9AFA3321DA291A5A1DD8E34280A7DC5E /* warnp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		029C72C7FD736B52B213D6FE803E5884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "scrypt-custom";
+			target = F991178BC0A3DA8515BEE299F8653E55 /* scrypt-custom */;
+			targetProxy = 1D225CCBF52C8054A30FDCCB9163EC79 /* PBXContainerItemProxy */;
+		};
+		52D2D3B4E785761822AE246D0FFFB7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-scrypt-custom_Example";
+			target = F252951EFCB2198BF334B3A7715656D2 /* Pods-scrypt-custom_Example */;
+			targetProxy = EDC9B862F44A6575F4BD40CFC84C6B4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23570B7562C05BFE9B2AD1C108CEE1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E917023F52CF3DC6A14A89F059698F /* Pods-scrypt-custom_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-scrypt-custom_Tests/Pods-scrypt-custom_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-scrypt-custom_Tests/Pods-scrypt-custom_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38769BC398E11CCCFD6BE188D4F55B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967649A813BED7635440722AE564F927 /* Pods-scrypt-custom_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-scrypt-custom_Tests/Pods-scrypt-custom_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-scrypt-custom_Tests/Pods-scrypt-custom_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40A7694E391D1E08B48929E93F890092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E96B9475F0D1119C3E8CCCE0C108218 /* scrypt-custom.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/scrypt-custom/scrypt-custom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/scrypt-custom/scrypt-custom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/scrypt-custom/scrypt-custom.modulemap";
+				PRODUCT_MODULE_NAME = scrypt;
+				PRODUCT_NAME = scrypt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C0777DA841797DE88BD4BD33AA2D9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72244571EE1C214997C75295AACED79E /* Pods-scrypt-custom_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-scrypt-custom_Example/Pods-scrypt-custom_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-scrypt-custom_Example/Pods-scrypt-custom_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72FA469ABDB61E9978CD761C4CED6FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55C1FDC814B28C9DEF766991CEA3F3D /* Pods-scrypt-custom_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-scrypt-custom_Example/Pods-scrypt-custom_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-scrypt-custom_Example/Pods-scrypt-custom_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A172541D05973C9BFD7C74142750A67C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEC1636983FED260886148A82648CF3 /* scrypt-custom.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/scrypt-custom/scrypt-custom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/scrypt-custom/scrypt-custom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/scrypt-custom/scrypt-custom.modulemap";
+				PRODUCT_MODULE_NAME = scrypt;
+				PRODUCT_NAME = scrypt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C28CFA5EDEF5E5FDD4B61C6332F0782 /* Build configuration list for PBXNativeTarget "Pods-scrypt-custom_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0777DA841797DE88BD4BD33AA2D9D2 /* Debug */,
+				72FA469ABDB61E9978CD761C4CED6FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD520A94A5FE8833B350C01F0DBE1183 /* Build configuration list for PBXNativeTarget "scrypt-custom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A172541D05973C9BFD7C74142750A67C /* Debug */,
+				40A7694E391D1E08B48929E93F890092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7B588861F3EB00876966AEACBA53CD /* Build configuration list for PBXNativeTarget "Pods-scrypt-custom_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38769BC398E11CCCFD6BE188D4F55B77 /* Debug */,
+				23570B7562C05BFE9B2AD1C108CEE1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

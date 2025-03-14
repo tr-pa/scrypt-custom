@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'scrypt-custom_Example' do
   pod 'scrypt-custom', :path => '../'
